@@ -26,7 +26,6 @@ export function createRouter() {
                         name: 'about',
                         component: () => import('@/views/index/About.vue')
                     },
-
                     {
                         path: '/content',
                         name: 'content',
