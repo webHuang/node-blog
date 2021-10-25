@@ -4,31 +4,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="83d36bde-e57a-4824-93cb-c8d62fce4d9f" name="变更" comment="初次代码上传">
-      <change afterPath="$PROJECT_DIR$/.babelrc" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/node-blog.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/api/client.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/api/client.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/api/server.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/api/server.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/app.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/components/index.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/components/loading.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/components/request-server.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/components/request.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/router/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/router/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/store/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/store/index.js" afterDir="false" />
+    <list default="true" id="83d36bde-e57a-4824-93cb-c8d62fce4d9f" name="变更" comment="初级稳定版本">
+      <change afterPath="$PROJECT_DIR$/client/views/components/footer.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/views/components/heard.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/client/views/index/Index.vue" beforeDir="false" afterPath="$PROJECT_DIR$/client/views/index/Index.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/views/index/Tags.vue" beforeDir="false" afterPath="$PROJECT_DIR$/client/views/index/Tags.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config/env.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/env.js" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/log/info.log" beforeDir="false" afterPath="$PROJECT_DIR$/log/info.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/dev-server.js" beforeDir="false" afterPath="$PROJECT_DIR$/server/dev-server.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/pro-server.js" beforeDir="false" afterPath="$PROJECT_DIR$/server/pro-server.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/test.js" beforeDir="false" afterPath="$PROJECT_DIR$/test/test.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -53,6 +34,7 @@
   <component name="ProjectViewState">
     <option name="autoscrollToSource" value="true" />
     <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showExcludedFiles" value="false" />
     <option name="showLibraryContents" value="true" />
     <option name="showMembers" value="true" />
   </component>
@@ -62,12 +44,14 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="format.on.save" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
     <property name="node.js.selected.package.tslint" value="(autodetect)" />
     <property name="nodejs_package_manager_path" value="npm" />
+    <property name="settings.editor.selected.configurable" value="actions.on.save" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="应用程序级" UseSingleDictionary="true" transferred="true" />
@@ -78,7 +62,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1635152259877</updated>
-      <workItem from="1635152262219" duration="3851000" />
+      <workItem from="1635152262219" duration="8816000" />
     </task>
     <task id="LOCAL-00001" summary="text">
       <created>1635152292584</created>
@@ -115,7 +99,14 @@
       <option name="project" value="LOCAL" />
       <updated>1635154206579</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="初级稳定版本">
+      <created>1635156314579</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1635156314579</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -137,6 +128,7 @@
     <option name="CHECK_NEW_TODO" value="false" />
     <MESSAGE value="text" />
     <MESSAGE value="初次代码上传" />
-    <option name="LAST_COMMIT_MESSAGE" value="初次代码上传" />
+    <MESSAGE value="初级稳定版本" />
+    <option name="LAST_COMMIT_MESSAGE" value="初级稳定版本" />
   </component>
 </project>
