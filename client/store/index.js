@@ -1,6 +1,6 @@
 import Vue from 'vue'
 import Vuex from 'vuex'
-import { timestampToDate} from '@/components'
+import { timestampToDate} from '@/utils'
 import { fetchTagsArtilesData, fetchArticles, fetchVisits, fetchTagsData, fetchArticleDetail, fetchYears } from '@/api/server'
 
 Vue.use(Vuex)

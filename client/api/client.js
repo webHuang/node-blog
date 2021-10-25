@@ -1,5 +1,5 @@
-import request from '@/components/request'
-import { objToUrlParam } from '@/components'
+import request from '@/utils/request'
+import { objToUrlParam } from '@/utils'
 
 export function fetchArticles(obj) {
     return request.get('/fetchArticles' + objToUrlParam(obj))

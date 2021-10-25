@@ -46,7 +46,7 @@ export function createRouter() {
             {
                 path: '/me',
                 name: 'me',
-                component: () => import('@/views/about/me.vue')
+                component: () => import('@/views/about/me.vue'),
             },
             { path: '*', redirect: '/index' },
         ]

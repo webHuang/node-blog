@@ -20,8 +20,12 @@
     "blog",
     "vue"
   ],
-  "author": "daniel",
+  "author": "woai3c",
   "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/woai3c/node-blog/issues"
+  },
+  "homepage": "https://github.com/woai3c/node-blog#readme",
   "dependencies": {
     "axios": "^0.21.1",
     "babel-runtime": "^6.26.0",
@@ -47,6 +51,7 @@
     "@babel/preset-env": "^7.10.2",
     "@babel/runtime": "^7.10.2",
     "babel-loader": "^8.0.6",
+    "babel-plugin-syntax-dynamic-import": "^6.18.0",
     "chokidar": "^3.4.3",
     "clean-webpack-plugin": "^2.0.2",
     "compression-webpack-plugin": "^3.1.0",

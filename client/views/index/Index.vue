@@ -3,8 +3,8 @@
         <header>
             <ul class="tags">
                 <li @click="gotoPage('index')">首页</li>
-              <li @click="gotoPage('about')">关于我</li>
-              <li @click="gotoPage('me')">我</li>
+                <li @click="gotoPage('about')">关于</li>
+                <li @click="gotoPage('me')">me</li>
             </ul>
         </header>
         <section class="main">
@@ -25,9 +25,7 @@
                         <img src="../../assets/person.jpg" alt="我的照片">
                     </div>
                     <p>daniel</p>
-                    <div class="my-link">
 
-                    </div>
                     <p>博客访问次数：{{ visits }}</p>
                 </div>
                 <div class="tag-header" v-if="sidebarData.length">

@@ -12,7 +12,7 @@
 
 <script>
 import { mapState } from 'vuex'
-import { timestampToDate } from '@/components'
+import { timestampToDate } from '@/utils'
 
 export default {
     props: {

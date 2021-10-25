@@ -1,5 +1,5 @@
 import Vue from 'vue'
-import App from  '@/App.vue'
+import App from '@/App.vue'
 import '@/assets/iconfont/ionicons.less'
 import '@/styles/public.css'
 import { Button, Tag, Page, Dropdown, DropdownMenu, DropdownItem, Spin, Message, Icon } from 'view-design'
@@ -20,7 +20,7 @@ Vue.component('Icon', Icon)
 
 Vue.prototype.$Message = Message
 
-// 解决 [vue-router] failed to resolve async component default: reference error: window is not defined 问题
+// 解决 [vue-router] failed to resolve async component default: referenceerror: window is not defined 问题
 if (typeof window === 'undefined') {
     global.window = {}
 }

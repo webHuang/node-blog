@@ -5,6 +5,27 @@
 
 注意，本项目的前后端代码都是放在一起的，前端代码放在 `client` 目录，后端代码放在 `server` 目录。
 
+## [在线预览](http://118.190.217.8:3389/)
+由于服务器网络带宽过小（阿里云 1M），所以首次加载时间较久，请耐心等待。
+
+个人博客 Chrome Lighthouse 评分
+
+![](https://github.com/woai3c/node-blog/blob/master/doc/performance.png)
+
+## 相关文档
+* [多个请求下 loading 的展示与关闭](https://github.com/woai3c/Front-end-articles/blob/master/control%20loading.md)
+* [Vue 页面权限控制和登陆验证](https://github.com/woai3c/Front-end-articles/blob/master/authentication.md)
+* [Vue 实现前进刷新，后退不刷新的效果](https://github.com/woai3c/Front-end-articles/blob/master/vue%20refresh.md)
+* [代码热更新](https://github.com/woai3c/node-blog/blob/master/doc/node-blog1.md)
+* [导出模块同时兼容 import 和 require](https://github.com/woai3c/node-blog/blob/master/doc/node-blog2.md)
+* [token](https://github.com/woai3c/node-blog/blob/master/doc/node-blog3.md)
+* [数据库](https://github.com/woai3c/node-blog/blob/master/doc/node-blog5.md)
+* [路由模式 history](https://github.com/woai3c/node-blog/blob/master/doc/node-blog6.md)
+* [webpack + express 实现文件精确缓存](https://github.com/woai3c/node-blog/blob/master/doc/node-blog7.md)
+* [阿里云服务器部署个人网站](https://github.com/woai3c/Front-end-articles/blob/master/ecs.md)
+* [性能优化--开启 gzip 压缩](https://github.com/woai3c/node-blog/blob/master/doc/optimize.md)
+* [日志功能](https://github.com/woai3c/node-blog/blob/master/doc/log.md)
+* [手把手教你搭建 Vue 服务端渲染项目](https://github.com/woai3c/Front-end-articles/issues/13)
 
 ## 前端页面
 * 首页(index)
@@ -40,7 +61,7 @@
 
 ## 使用
 #### 注意
-1. **登陆入口在页面脚部的 Copyright ©2020 **
+1. **登陆入口在页面脚部的 Copyright ©2020 woai3c**
 2. **博客内容、评论使用的都是 `markdown` 语法**
 
 需要先下载 mongodb，建议按照[windows 安装教程](https://www.runoob.com/mongodb/mongodb-window-install.html)一步步安装。
@@ -59,11 +80,11 @@ git clone https://github.com/woai3c/node-blog.git
 打开 `mongod.exe`，再打开 `mongo.exe`，在 `mongo.exe` 打开的命令行进行如下操作：
 
 **创建数据库**
-```
+```js
 use blog
 ```
 **创建 user 集合，用来保存用户信息**
-```
+```js
 db.createCollection(userCollection)
 ```
 **添加用户信息**
@@ -90,7 +111,7 @@ npm run dev
 npm run build
 ```
 运行服务
-```
+```js
 npm run server
 ```
 **测试**
@@ -99,14 +120,8 @@ npm run test
 ```
 **访问地址**
 ```
-// 生产环境
 http://localhost:8888/
-// 开发环境
-http://localhost:8080/
-
 ```
-**mangodb启动**
-```
-brew services restart mongodb-community@4.4
-```
-# node-blog
+![在这里插入图片描述](https://img-blog.csdnimg.cn/20190623190928985.jpg?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3E0MTEwMjAzODI=,size_16,color_FFFFFF,t_70)
+![在这里插入图片描述](https://img-blog.csdnimg.cn/20190623190938540.jpg?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3E0MTEwMjAzODI=,size_16,color_FFFFFF,t_70)
+![在这里插入图片描述](https://img-blog.csdnimg.cn/20190623190948955.jpg?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3E0MTEwMjAzODI=,size_16,color_FFFFFF,t_70)
