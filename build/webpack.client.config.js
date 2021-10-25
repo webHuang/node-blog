@@ -12,11 +12,9 @@ const plugins = [
         'process.env.NODE_ENV': JSON.stringify(
             process.env.NODE_ENV || 'development'
         ),
-        'process.env.VUE_ENV': '"client"',
-
+        'process.env.VUE_ENV': '"client"'
     }),
     new VueSSRClientPlugin(),
-
 ]
 
 if (isProd) {
@@ -53,5 +51,5 @@ module.exports = merge(base, {
                 }
             },
         }
-    }
+    },
 })
