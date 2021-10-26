@@ -4,7 +4,6 @@
     <section class="main">
       <div class="page-list">
         <keep-alive>
-          sd
           <router-view
               :articlesData="articlesData"
               :pageIndex="pageIndex"
@@ -14,25 +13,18 @@
           ></router-view>
         </keep-alive>
       </div>
-    </section>
-    <div class="sidebar">
-      <div class="introduction">
-        <div>
-          <img src="../../assets/person.jpg" alt="我的照片">
+      <div class="sidebar">
+        <div class="tag-header" v-if="sidebarData.length">
+          我的标签
         </div>
-        <p>daniel</p>
+        <ul @click="toggleTag">
+          <li v-for="(item, index) in sidebarData" :key="index" class="sidebar-li">
+            {{ item.tag }}（{{ item.nums }}）
+          </li>
+        </ul>
+      </div>
+    </section>
 
-        <p>博客访问次数：{{ visits }}</p>
-      </div>
-      <div class="tag-header" v-if="sidebarData.length">
-        我的标签
-      </div>
-      <ul @click="toggleTag">
-        <li v-for="(item, index) in sidebarData" :key="index" class="sidebar-li">
-          {{ item.tag }}（{{ item.nums }}）
-        </li>
-      </ul>
-    </div>
 
     <view-footer></view-footer>
   </div>
@@ -83,14 +75,6 @@ export default {
     fetchArticles = require('@/api/client').fetchArticles
   },
   methods: {
-    gotoPage(name) {
-      this.$router.push(name)
-      if (name == 'index') {
-        this.pageIndex = 1
-        this.tags = []
-        this.getAppointArticles()
-      }
-    },
 
     toggleTag(e) {
       this.pageIndex = 1
@@ -108,10 +92,9 @@ export default {
         tags: this.tags,
         pageSize: this.pageSize,
         pageIndex: this.pageIndex,
+      }).then(res => {
+        this.$store.commit('setArticles', res)
       })
-          .then(res => {
-            this.$store.commit('setArticles', res)
-          })
     },
 
 
@@ -125,8 +108,9 @@ export default {
 }
 
 .page-list {
-  width: 100%;
+  width: 85%;
 }
+
 
 .main {
   width: 1200px;
@@ -138,7 +122,8 @@ export default {
 
 
 .sidebar {
-  width: 290px;
+  width: 260px;
+  margin-left: 20px;
   color: #7d8b8d;
 }
 
@@ -158,12 +143,11 @@ export default {
 }
 
 .tag-header {
-  background: #333;
+  background: #f2f2f2;
   border: 1px solid #dedede;
   border-bottom: 0;
-  color: #fff;
   padding: 15px;
-  font-size: 16px;
+  font-size: 12px;
 }
 
 .introduction {

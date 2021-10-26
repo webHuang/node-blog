@@ -1,23 +1,62 @@
 <template>
   <div class="header">
-    <div class="header-box">
+    <div class="header-top">
       <ul class="tags">
         <li @click="gotoPage('index')">博客首页</li>
         <li @click="gotoPage('about')">关于</li>
         <li @click="gotoPage('me')">me</li>
       </ul>
+    </div>
+    <div class="header-box">
       <div class="logo">
         <img src="../../assets/person.jpg" alt="我的照片">
       </div>
     </div>
-
+    <div class="user-profile-head-info">
+      <ul>
+        <li>
+          <div class="user-profile-statistics-num">{{ visits }}</div>
+          <div class="user-profile-statistics-name">被访问量</div>
+        </li>
+        <li>
+          <div class="user-profile-statistics-num">{{ totalArticles }}</div>
+          <div class="user-profile-statistics-name">文章数量</div>
+        </li>
+        <li>
+          <div class="user-profile-statistics-num">222</div>
+          <div class="user-profile-statistics-name">点赞数量</div>
+        </li>
+      </ul>
+    </div>
   </div>
 </template>
 
 <script>
 
+import {mapState} from 'vuex'
+
 export default {
   name: 'heard',
+
+  computed: {
+    ...mapState([
+      'sidebarData',
+      'visits',
+      'articlesData',
+      'totalArticles',
+    ]),
+  },
+  methods: {
+    gotoPage(name) {
+      this.$router.push(name)
+      if (name == 'index') {
+        this.pageIndex = 1
+        this.tags = []
+        this.getAppointArticles()
+      }
+    },
+
+  }
 }
 </script>
 <style scoped>
@@ -27,12 +66,15 @@ export default {
   background-image: url('../../assets/heard.jpg');
   background-position: top center;
   background-size: cover;
-  padding-top: 80px;
+
+}
+
+.header-top {
+  height: 80px;
 }
 
 .header-box {
   position: relative;
-  margin-top: 80px;
   height: 80px;
   border-top: #f2dede solid 1px;
   background: #FFFFFF;
@@ -59,6 +101,50 @@ export default {
   border-radius: 50%;
 }
 
+.user-profile-head-info {
+  display: flex;
+  justify-content: center;
+  padding-top: 24px;
+  background: #FFFFFF;
+}
+
+.user-profile-head-info > ul {
+  display: flex;
+
+}
+
+.user-profile-head-info > ul > li {
+  width: 144px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+}
+
+.user-profile-head-info > ul > li:after {
+  position: absolute;
+  right: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  content: "";
+  height: 24px;
+  width: 1px;
+  background: #e8e8ed;
+}
+
+.user-profile-statistics-num {
+  color: #222226;
+  font-family: DINCond-Black;
+  font-size: 24px;
+  line-height: 24px;
+  margin-bottom: 16px;
+}
+
+.user-profile-statistics-name {
+  color: #999aaa;
+  font-size: 14px;
+  line-height: 16px;
+}
 
 .tags {
   display: flex;

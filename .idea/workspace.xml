@@ -4,11 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="83d36bde-e57a-4824-93cb-c8d62fce4d9f" name="变更" comment="初级稳定版本">
-      <change afterPath="$PROJECT_DIR$/client/views/components/footer.vue" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/client/views/components/heard.vue" afterDir="false" />
+    <list default="true" id="83d36bde-e57a-4824-93cb-c8d62fce4d9f" name="变更" comment="修改heard">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/views/components/heard.vue" beforeDir="false" afterPath="$PROJECT_DIR$/client/views/components/heard.vue" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/client/views/index/Index.vue" beforeDir="false" afterPath="$PROJECT_DIR$/client/views/index/Index.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/views/index/Tags.vue" beforeDir="false" afterPath="$PROJECT_DIR$/client/views/index/Tags.vue" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/log/info.log" beforeDir="false" afterPath="$PROJECT_DIR$/log/info.log" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -62,7 +62,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1635152259877</updated>
-      <workItem from="1635152262219" duration="8816000" />
+      <workItem from="1635152262219" duration="12395000" />
     </task>
     <task id="LOCAL-00001" summary="text">
       <created>1635152292584</created>
@@ -106,7 +106,14 @@
       <option name="project" value="LOCAL" />
       <updated>1635156314579</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="修改heard">
+      <created>1635179270801</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1635179270802</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -129,6 +136,7 @@
     <MESSAGE value="text" />
     <MESSAGE value="初次代码上传" />
     <MESSAGE value="初级稳定版本" />
-    <option name="LAST_COMMIT_MESSAGE" value="初级稳定版本" />
+    <MESSAGE value="修改heard" />
+    <option name="LAST_COMMIT_MESSAGE" value="修改heard" />
   </component>
 </project>
