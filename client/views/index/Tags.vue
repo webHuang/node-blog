@@ -53,7 +53,8 @@ export default {
 .content-li {
   background: #fff;
   padding: 20px;
-  border: 1px solid #f2f2f2;
+  border: 1px solid #e5e5e5;
+  border-left: 2px solid #999999;
   margin-bottom: 10px;
   display: flex;
   justify-content: space-between;
@@ -69,7 +70,7 @@ export default {
 }
 
 .p-title {
-  font-size: 18px;
+  font-size: 14px;
   color: #666;
   cursor: pointer;
 }
@@ -78,12 +79,6 @@ export default {
   color: #bcbcbc;
   font-size: 12px;
   align-items: center;
-}
-
-.tag-title {
-  color: #333;
-  font-size: 20px;
-  margin-bottom: 20px;
 }
 
 .page {

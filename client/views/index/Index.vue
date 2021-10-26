@@ -125,53 +125,30 @@ export default {
   width: 260px;
   margin-left: 20px;
   color: #7d8b8d;
+
 }
 
 
 .sidebar-li {
-  padding: 15px;
+  padding: 10px;
   background: #fff;
-  border: 1px solid #dedede;
+  border: 1px solid #e5e5e5;
+
   border-top: 0;
   cursor: pointer;
-  font-size: 16px;
+  font-size: 14px;
 }
 
 .sidebar-li:hover {
-  background: #dedede;
-  color: #fff;
+  color: #19be6b;
 }
 
 .tag-header {
   background: #f2f2f2;
-  border: 1px solid #dedede;
-  border-bottom: 0;
-  padding: 15px;
+  padding: 10px;
   font-size: 12px;
+  border: 1px solid #e5e5e5;
+  border-bottom: 0;
 }
 
-.introduction {
-  margin-bottom: 10px;
-  font-size: 16px;
-}
-
-.introduction a {
-  display: inline-block;
-}
-
-.my-link {
-  display: flex;
-  align-items: center;
-  margin: 20px 0;
-}
-
-.my-link a {
-  width: 34px;
-  height: 34px;
-  margin-right: 20px;
-}
-
-.my-link img {
-  width: 100%;
-}
 </style>

@@ -2,11 +2,12 @@ import Vue from 'vue'
 import App from '@/App.vue'
 import '@/assets/iconfont/ionicons.less'
 import '@/styles/public.css'
-import { Button, Tag, Page, Dropdown, DropdownMenu, DropdownItem, Spin, Message, Icon } from 'view-design'
+import '@/styles/markdown.less';
+import {Button, Tag, Page, Dropdown, DropdownMenu, DropdownItem, Spin, Message, Icon} from 'view-design'
 import VueMarkdown from 'vue-markdown'
-import { createRouter } from '@/router'
-import { createStore } from '@/store'
-import { sync } from 'vuex-router-sync'
+import {createRouter} from '@/router'
+import {createStore} from '@/store'
+import {sync} from 'vuex-router-sync'
 
 Vue.component('VueMarkdown', VueMarkdown)
 Vue.component('Button', Button)
@@ -38,5 +39,5 @@ export function createApp() {
         render: h => h(App)
     })
 
-    return { app, router, store }
+    return {app, router, store}
 }

@@ -8,25 +8,27 @@
       </ul>
     </div>
     <div class="header-box">
-      <div class="logo">
-        <img src="../../assets/person.jpg" alt="我的照片">
+      <div class="header-center">
+        <div class="logo">
+          <img src="../../assets/person.jpg" alt="我的照片">
+        </div>
+        <div class="user-profile-head-info">
+          <ul>
+            <li>
+              <div class="user-profile-statistics-num">{{ visits }}</div>
+              <div class="user-profile-statistics-name">被访问量</div>
+            </li>
+            <li>
+              <div class="user-profile-statistics-num">{{ totalArticles }}</div>
+              <div class="user-profile-statistics-name">文章数量</div>
+            </li>
+            <li>
+              <div class="user-profile-statistics-num">222</div>
+              <div class="user-profile-statistics-name">点赞数量</div>
+            </li>
+          </ul>
+        </div>
       </div>
-    </div>
-    <div class="user-profile-head-info">
-      <ul>
-        <li>
-          <div class="user-profile-statistics-num">{{ visits }}</div>
-          <div class="user-profile-statistics-name">被访问量</div>
-        </li>
-        <li>
-          <div class="user-profile-statistics-num">{{ totalArticles }}</div>
-          <div class="user-profile-statistics-name">文章数量</div>
-        </li>
-        <li>
-          <div class="user-profile-statistics-num">222</div>
-          <div class="user-profile-statistics-name">点赞数量</div>
-        </li>
-      </ul>
     </div>
   </div>
 </template>
@@ -59,7 +61,7 @@ export default {
   }
 }
 </script>
-<style scoped>
+<style lang="less" scoped>
 
 .header {
   text-align: center;
@@ -67,17 +69,42 @@ export default {
   background-position: top center;
   background-size: cover;
 
+  .header-top {
+    height: 80px;
+  }
+
+  .header-box {
+    position: relative;
+    height: 80px;
+    border-top: #f2dede solid 1px;
+    background: #FFFFFF;
+
+    .header-center {
+      width: 1200px;
+      margin: auto;
+    }
+  }
+
 }
 
-.header-top {
-  height: 80px;
-}
 
-.header-box {
-  position: relative;
+.tags {
+  display: flex;
+  width: 1200px;
+  margin: auto;
   height: 80px;
-  border-top: #f2dede solid 1px;
-  background: #FFFFFF;
+  align-items: flex-end;
+  align-content: flex-end;
+
+  ul {
+
+    margin: 30px;
+  }
+
+  li {
+    width: 100px;
+    font-size: 14px;
+  }
 }
 
 .logo {
@@ -103,7 +130,7 @@ export default {
 
 .user-profile-head-info {
   display: flex;
-  justify-content: center;
+  justify-content: right;
   padding-top: 24px;
   background: #FFFFFF;
 }
@@ -146,18 +173,4 @@ export default {
   line-height: 16px;
 }
 
-.tags {
-  display: flex;
-  margin: auto;
-  width: 1200px;
-}
-
-.tags li {
-  width: 100px;
-  cursor: pointer;
-}
-
-li {
-  font-size: 20px;
-}
 </style>

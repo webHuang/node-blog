@@ -1,5 +1,5 @@
 const path = require('path')
-const { VueLoaderPlugin } = require('vue-loader')
+const {VueLoaderPlugin} = require('vue-loader')
 const isProd = process.env.NODE_ENV === 'production'
 
 module.exports = {
@@ -15,7 +15,7 @@ module.exports = {
         chunkFilename: '[name].[contenthash].js',
     },
     resolve: {
-        extensions: ['.js', '.vue', '.json', '.css'],
+        extensions: ['.js', '.vue', '.json', 'less', '.css'],
         alias: {
             '@': path.resolve(__dirname, '../client'),
         }
